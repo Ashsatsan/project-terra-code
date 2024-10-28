@@ -1,4 +1,4 @@
-/*resource "kubernetes_service_account" "kasten_k10_sa" {
+resource "kubernetes_service_account" "kasten_k10_sa" {
   metadata {
     name      = "kasten-k10-sa"
     namespace = "kasten-io"  # Default namespace for Kasten
@@ -29,4 +29,3 @@ resource "kubernetes_role_binding" "kasten_k10_binding" {
     namespace = "kasten-io"
   }
 }
-*/

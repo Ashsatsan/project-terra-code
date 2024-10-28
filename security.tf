@@ -1,5 +1,5 @@
 # Security Group for EC2 Instance
-/*resource "aws_security_group" "bastion_sg" {
+resource "aws_security_group" "bastion_sg" {
   vpc_id = aws_vpc.my_vpc.id
 
   # Inbound Rules
@@ -85,4 +85,3 @@ resource "aws_security_group" "rds_sg" {
     Name = "RDSSecurityGroup"
   }
 }
-*/

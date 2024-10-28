@@ -8,12 +8,12 @@ resource "aws_eks_cluster" "my_eks" {
   }
 
   # Enable logging for the EKS cluster
-  /*enabled_cluster_log_types = [
+  enabled_cluster_log_types = [
     "api",
     "audit",
     "controllerManager",
     "scheduler"
-  ]*/
+  ]
 
   depends_on = [
     aws_iam_policy_attachment.eks_cluster_AmazonEKSClusterPolicy,

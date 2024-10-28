@@ -1,4 +1,4 @@
-/*resource "aws_instance" "bastion" {
+resource "aws_instance" "bastion" {
   ami                    = "ami-0c55b159cbfafe1f0"
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.public_subnet1.id
@@ -73,4 +73,3 @@ resource "aws_db_subnet_group" "my_db_subnet_group" {
     Name = "MyDBSubnetGroup"
   }
 }
-*/

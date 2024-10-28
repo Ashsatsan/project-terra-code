@@ -1,4 +1,4 @@
-/*resource "helm_release" "kasten_k10" {
+resource "helm_release" "kasten_k10" {
   name       = "kasten-io"
   repository = "https://charts.kasten.io/stable"
   chart      = "k10"
@@ -32,4 +32,4 @@
     aws_eks_cluster.my_eks,
     aws_iam_role.kasten_k10_role
   ]
-}*/
+}
